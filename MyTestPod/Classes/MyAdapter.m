@@ -10,6 +10,6 @@
 @implementation MyAdapter
 
 -(void)sayHello:(NSString*)name {
-    NSLog(@"Hello %@", name);
+    NSLog(@"Hello, %@", name);
 }
 @end
