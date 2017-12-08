@@ -7,12 +7,15 @@
 //
 
 #import "MyTestPodAppDelegate.h"
+#import <MyTestPod/MyAdapter.h>
 
 @implementation MyTestPodAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    MyAdapter* adapter = [[MyAdapter alloc] init];
+    [adapter sayHello:@"Frank"];
     return YES;
 }
 
